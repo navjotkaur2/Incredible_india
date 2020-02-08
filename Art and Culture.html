@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="art and culture.css" rel="stylesheet"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="header">
+  <a href="TRY.html" class="logo">Incredible India</a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <center><img src="k1.jpg" style="width:900px" ></center>
+  <div class="text"><h1>Kathakali</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+ <center> <img src="d2.jpg" style="width:700px" height="650px"></center>
+  <div class="text"><h1>Classical Dance</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <center><img src="musicians.jpg" style="width:900px"height="600px"></center>
+  <div class="text"><h1>Musicians Painting</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+ <center> <img src="qutub minar.jpg" style="width:900px" height="600px"></center>
+  <div class="text"><h1>Qutub Minar</h1></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <center><img src="ajanta and ellora caves.jpg" style="width:700px"></center>
+  <div class="text"><h1>Ajanta and Ellora Caves</h1></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<div class="footer">
+    <div class="container">
+      <div class="row">
+       <div class="col-sm-9">
+	   </div>
+       <div class="col-sm-3">
+		    <a href="https://www.instagram.com/"><img src="insta1.png" height="50px" ></a>
+		    <a href="https://www.youtube.com/"><img src="youtube.png" height="50px" ></a>
+		    <a href="https://twitter.com/"><img src="twitter.png" height="50px" ></a>
+	   </div>
+</div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

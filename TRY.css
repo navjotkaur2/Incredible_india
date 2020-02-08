@@ -1,0 +1,60 @@
+#point{
+ color:white;
+  font-size:90px;
+
+}
+#baba:hover {
+  width: 600px;
+  height: 600px;
+   transition: width 2s, height 4s;
+}
+
+body
+{
+	background-attachment:fixed;
+	background-image:url("bg5.jpg");
+	background-repeat:no-repeat;
+	
+	}
+.newbody1
+{
+	background-repeat:no-repeat;
+}
+
+#rainy
+{
+	color:#DAF7A6;
+	font-family:Sriracha;
+}
+.about
+{
+	font-family:Anton;
+	color:#8D9DDF;
+}
+
+.theoryabout
+{
+	color:#DAF7A6;
+	font-family:Sriracha;
+}
+
+.desc
+{
+	color:#DAF7A6;
+	font-family:Sriracha;
+}
+.weathers
+{
+	font-family:Anton;
+	color:#8D9DDF;
+	
+}
+.Searchbottom{
+	font-family:PT Sans Narrow;
+	color:#8D9DDF;
+}
+#footer
+{
+  
+   background-color: #033229;
+}
